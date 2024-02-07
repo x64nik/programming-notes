@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Book</title>
+    <link rel="stylesheet" href="/static/CSS/delete.css" />
+    <!-- <link
+      rel="shortcut icon"
+      href="/static/images/book.png"
+      type="image/x-icon"
+    /> -->
+
+    <link rel="stylesheet" href="./static/CSS/style.css" />
+
+    <link rel="stylesheet" href="./static/CSS/index.css" />
+    <link rel="icon" href="./static/images/logo.png" />
+
+  </head>
+  <body>
+    <nav class="header">
+      <img class="logoimg" src="./static/images/book.png" alt="Logo Img"/>
+      <a class="logo">BookStore</a>
+      <div class="header-right">
+        <a href="/home">Home</a>
+        <a href="/addpage" type="button" >Add Book</a>
+        <a href="/updatepage" type="button">Update Book</a>
+        <a href="/refresh" type="button" >Log Out</a>
+      </div>
+    </nav>
+
+    <div id="Main">
+      <div id="deletebox">
+
+        <form action="/delete" onsubmit="return confirm('You Really Want To Delete Book ?');" method="POST" id="formdelete">
+          <div>
+          <h1 class="headingdele">Delete Book</h1>
+        </div>
+        <div id="iddelete">
+
+          <label for="" class="deletelable"> BookId </label>
+          <input
+          type="text"
+          name="bookId"
+          id="inputdelete"
+          required
+          placeholder=" Enter the Book Id "
+          />
+        </div>
+          <input type="submit" value="Delete" id="deletebtn" />
+        </nsubmit=>
+      </div>
+      </div>
+    </body>
+    </html>

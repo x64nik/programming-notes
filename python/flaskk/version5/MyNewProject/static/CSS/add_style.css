@@ -1,0 +1,14 @@
+*{
+    margin: 5;
+    padding: 0;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+body{
+    background-color: rgb(252, 252, 252);
+}
+
+.main{
+    margin: 5;
+}

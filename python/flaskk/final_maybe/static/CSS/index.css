@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+   background: linear-gradient(to bottom, #9087ef,   #ccc4c4);
+
+    /* background-color: white; */
+}
+
+.header {
+    overflow: hidden;
+    background-color: #3f3794;
+    /* background-color: rgb(237, 160, 18); */
+    padding: 0.6%;
+    height: 4rem;
+    
+}
+
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px 35px;
+    text-decoration: none;
+    font-variant-caps:small-caps;
+    font-size: 22px;
+    line-height: 24px;
+    border-radius: 3px;
+}
+
+.header a.logo {
+    padding: 10px;
+    font-size: 35px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-family: serif;
+    color:white;
+    text-decoration: underline #F90716;
+    
+}
+
+.header a:hover {
+    color: black;
+    background-color :white;
+}
+
+.header a.active {
+    color: white;
+}
+
+.header-right {
+    float: right;
+}
+
+.heading{
+    
+        padding: 4% 0 0;
+        text-align: center;
+        font-size: 30px;
+        color: #05161f;
+        margin-bottom: 2rem;
+}
+#bottom {
+    text-align: center;
+    background-color: #302a77;
+    padding-top: 10px;
+}
+.footer-link{
+    margin:3% ;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+.copyright {
+    color: white;
+    font-variant-caps:small-caps;
+    font-size: 19px;
+    margin-top:1%;
+    padding: 20px 0 10px;
+    
+}
+
+.contact-us{
+    margin: 8% 0 0 ;
+    text-align: center;
+}
+.contact-msg{
+    width: 40%;
+    margin: 50px auto 7%;
+    font-size:20Px;
+}
+.logod{
+    margin:4% 0 7%;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.btn{
+    background-color: #302a77;
+    color:white;
+    font-variant-caps:small-caps;
+    font-size: 20px;
+    padding: 13pX;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+.btn:hover{
+    background-color:#5649c5;
+    color:black;
+    border: solid;
+}
+
+.card {
+    display: inline-block;
+    padding: 0.5rem;
+    background: linear-gradient(to bottom, #8c87c1, #5b5b72);
+    width: 12rem;
+    height: 22rem;
+    margin: 1rem 3rem 1rem 3rem;
+    box-shadow: #323232 4px 1px 10px 10px;
+}
+.card:hover {
+    
+    box-shadow:none;
+    cursor: pointer;
+    
+}
+
+  .bookImage {
+    width: 100%;
+    height: 12rem;
+  }
+  .bookName {
+    font-weight: bolder;
+    margin-top: 1.2rem;
+    text-align: center;
+    color: black;
+    font-size: larger;
+}
+  .bookAuthor {
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    font-size: larger;
+  }
+  .bookPrice,
+  .bookId {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+
+  img.logoimg {
+    width: 3.5rem;
+    height: 3rem;
+}
+
+
+
+

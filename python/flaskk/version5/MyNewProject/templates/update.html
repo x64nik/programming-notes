@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/CSS/style.css" />
+    <link rel="stylesheet" href="./static/CSS/update.css" />
+    <link rel="stylesheet" href="./static/CSS/index.css" />
+
+    <link rel="icon" href="./static/images/logo.png" />
+    
+    
+    
+    <title>update Book</title>
+</head>
+<body>
+    <nav class="header">
+        <img class="logoimg" src="./static/images/book.png" alt="Logo Img"/>
+        <a class="logo">BookStore</a>
+        <div class="header-right">
+          <a href="/home">Home</a>
+          <a href="/addpage" type="button" >Add </a>
+          <a href="/deletepage" type="button" >Delete </a>
+          <a href="/logout" type="button" >Log Out</a>
+        </div>
+      </nav>
+  
+    <div class="mainupdate">
+        <form action='/update' onsubmit="return confirm('Is the Book Price filled out correctly?');" method="POST">
+            <div id="updatebox">
+
+                <div class="headingupdate">
+                    
+                    <h1 >
+                        Update Book Price
+                    </h1>
+                </div>
+                <div class="formele">
+                    
+                    BookId     <input type="text" name = "BOOK_ID" class="inputupdate" id="bookprice" placeholder=" Enter the Book Id " required>
+                    
+                </div> 
+                
+                <div  class="formele">
+                    BookPrice     <input type="text" name ="BOOK_PRICE" class="inputupdate" placeholder=" Enter the Book Price"  required>
+                    
+                </div>
+                <center  class="formele">
+                    
+                    <div><input type="submit" value="Update" id="updatehere">
+                    </center></div>
+                </div>
+            </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store</title>
+    <link rel="stylesheet" href="./static/CSS/index.css" />
+    <link rel="icon" href="./static/images/logo.png" />
+  </head>
+
+  <body>
+    <nav class="header">
+      <img class="logoimg" src="./static/images/book.png" alt="Logo Img"/>
+      <a class="logo" href="/home">BookStore</a>
+      <div class="header-right">
+        <a href="">Home</a>
+        <a href="/addpage" type="button" >Add </a>
+        <a href="/deletepage" type="button" >Delete </a>
+        <a href="/updatepage" type="button">Update </a>
+        <a href="#Available">Available</a>
+        <a href="#bottom">Contact</a>
+        <a href="/refresh" type="button" >Log out</a>
+      </div>
+    </nav>
+
+    <div class="bookgrid">
+      <img
+        style="width: 100%; height: 100%"
+        src="./static/images/book2.jpg"
+        alt="banner"
+      />
+    </div>
+
+    <div id="Available" class="heading">
+      <h3>Available</h3>
+   </div>
+      <div id="renderbox">
+
+        {% for data in Books%}
+        <div class="card">
+          <img
+            src="./static/images/bookimgall.jpeg"
+            alt="book1"
+            class="bookImage"
+          />
+          <div class="bookId">{{data.BOOK_ID}}</div>
+          <div class="bookName">{{data.BOOK_NAME}}</div>
+          <div class="bookAuthor">{{data.BOOK_AUTHOR}}</div>
+          <div class="bookPrice">Rs.{{data.BOOK_PRICE}}</div>
+        </div>
+        {%endfor%}
+      </div>
+
+
+      <div class="contact-us">
+        <h3 class="heading">Get In Touch</h3>
+        <p class="contact-msg">
+          If you have any questions, please feel free to drop us a line. If you
+          don't get answer immediately, We'll get back to you as soon as we can.
+        </p>
+        <a class="btn" href="mailto:" target="blank">CONTACT</a><br />
+        <img class="logod" src="./static/images/logo.png" alt="logo" />
+      </div>
+    </div>
+
+    <div id="bottom">
+      <a class="footer-link">bookshop@gmail.com</a>
+      <p class="copyright">©DebugEntity</p>
+    </div>
+  </body>
+</html>

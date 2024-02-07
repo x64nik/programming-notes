@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add book</title>
+    <link rel="stylesheet" href="/static/CSS/Add.css" />
+    <link rel="stylesheet" href="./static/CSS/style.css">
+    <link rel="stylesheet" href="./static/CSS/index.css" />
+
+    <link rel="icon" href="./static/images/logo.png" />
+
+
+  </head>
+  <body>
+    <nav class="header">
+      <img class="logoimg" src="./static/images/book.png" alt="Logo Img"/>
+      <a class="logo">BookStore</a>
+      <div class="header-right">
+        <a href="/home">Home</a>
+        <a href="/deletepage" type="button" >Delete Book</a>
+        <a href="/updatepage" type="button" >Update Book</a>
+        <a href="/refresh" type="button" >Log out</a>
+      </div>
+    </nav>
+
+    <form action="/add"  onsubmit="return confirm('Is the Book datails filled out correctly?');" method="POST" id="form">
+
+        <h1 class="headingAdd">
+            Book Registration
+        </h1>
+      <div class="container">
+
+        <div class="allinput" >
+          <label for=""> BookId
+        </label>
+          <input type="text" name="bookId" required class="inputdata"  id="inp1"
+           placeholder=" Enter the Book ID" />
+        </div>
+
+        <div class="allinput">
+          <label for=""> BookName </label>
+          <input type="text" name="bookName" required class="inputdata" placeholder=" Enter the Book Name"  id="inp2" />
+        </div>
+        <div class="allinput">
+          <label for=""> BookAuthor </label>
+          <input type="text" name="bookAuthor" required class="inputdata" placeholder=" Enter the Author Name "  id="inp3"/>
+        </div>
+        <div class="allinput">
+          <label for=""> BookPrice </label>
+          <input type="text" name="bookPrice" required class="inputdata" placeholder=" Enter the Book Price " id="inp4" />
+          <div>
+            <input type="submit" value="Submit " id="submitbtn" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

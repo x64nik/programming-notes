@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/CSS/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><h3>BookStore</h3></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+            <li> <a href="/addpage" type="button" class="btn">Add new Book</a></li>
+            <li><a href="/deletepage" type="button" class="btn">Delete Book</a></li>
+            <li><a href="/refresh" type="button" class="btn">Refresh</a></li>
+        </ul>
+    </nav>
+
+    <div class="bookgrid">
+       <img style="width:100%" src="./static/images/mainimg.jpg" alt="banner"/>
+     </div>
+     <div>
+      <img style="width:100%" src="./static/images/banner2.jpg" alt="banner"/>
+     </div>
+     <div>
+    <div class="card">
+        <img src="./static/images/book1.jpg" alt="book1" class="bookImage">
+        <div class="bookId">1</div>
+        <div class="bookName">Its End with Us</div>
+        <div class="bookAuthor">Collen Hoover</div>
+        <div class="bookPrice">Rs 232</div>
+     </div>
+     <div class="card">
+        <img src="./static/images/book2.jpg" alt="book1" class="bookImage">
+        <div class="bookId">2</div>
+        <div class="bookName">Times Table</div>
+        <div class="bookAuthor">Collen Hoover</div>
+        <div class="bookPrice">Rs 299</div>
+     </div>
+     <div class="card">
+        <img src="./static/images/book3.jpg" alt="book1" class="bookImage">
+        <div class="bookId">3</div>
+        <div class="bookName">Automic Habbit</div>
+        <div class="bookAuthor">Michel</div>
+        <div class="bookPrice">Rs 199</div>
+     </div>
+     <div class="card">
+        <img src="./static/images/book4.jpg" alt="book1" class="bookImage">
+        <div class="bookId">4</div>
+        <div class="bookName">It Start with Us</div>
+        <div class="bookAuthor">Collen Hoover</div>
+        <div class="bookPrice">Rs 240</div>
+     </div>
+   </div>
+     <div>
+     {% for data in Books%}
+     <div class="card">
+        <img src="./static/images/bookimgall.jpeg" alt="book1" class="bookImage">
+        <div class="bookId">{{data.BOOK_ID}}</div>
+        <div class="bookName">{{data.BOOK_NAME}}</div>
+        <div class="bookAuthor">{{data.BOOK_AUTHOR}}</div>
+        <div class="bookPrice">Rs{{data.BOOK_PRICE}}</div>
+     </div>
+     {%endfor%}
+     
+</body>
+</html>
